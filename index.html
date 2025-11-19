@@ -3,86 +3,99 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Me-Drawing – Project Proposal</title>
+  <title>Me-Drawing (Python Turtle Cartoon) – Proposal</title>
   <style>
     body { 
       font-family: Arial, sans-serif; 
       margin: 40px; 
-      background: #f8f9fa; 
+      background: #f4f7fb; 
       color: #222; 
+      line-height: 1.6;
     }
-    h1, h2 { color: #004aad; }
-    section { margin-bottom: 25px; }
-    ul, ol { margin-left: 20px; }
-    .date { font-style: italic; color: gray; }
+    h1, h2 {
+      color: #0056b3;
+    }
+    section {
+      margin-bottom: 25px;
+      background: #ffffff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    ul, ol {
+      margin-left: 20px;
+    }
+    .date {
+      font-style: italic;
+      color: gray;
+    }
   </style>
 </head>
+
 <body>
 
-  <h1>Me-Drawing</h1>
-  <p><strong>Team Members:</strong> Q (Solo Project)</p>
+  <h1>Me-Drawing (Python Turtle Cartoon)</h1>
+  <p><strong>Team Members:</strong> Q</p>
 
   <section>
     <h2>Application Overview</h2>
     <p>
-      Me-Drawing is a small application that takes a user’s uploaded photo 
-      and converts it into a line-art drawing using Python Turtle graphics. 
-      The program extracts the outlines of the image and draws them using 
-      turtle to create a sketched version of the person.
+      The Me-Drawing project uses Python’s Turtle graphics to draw a cartoon version of a user’s uploaded image. 
+      The program converts a real picture into simplified outlines and then recreates it as a cartoon-like sketch using turtle drawing commands.
     </p>
   </section>
 
   <section>
     <h2>Technology Overview</h2>
     <ul>
-      <li><strong>Languages:</strong> Python, HTML, CSS</li>
-      <li><strong>Libraries/Frameworks:</strong> Turtle, OpenCV (image edges), PIL</li>
-      <li><strong>Platform:</strong> Desktop application / Python environment</li>
-      <li><strong>Hosting:</strong> Local machine (code runs in Python)</li>
+      <li><strong>Languages:</strong> Python</li>
+      <li><strong>Libraries/Modules:</strong> Turtle, OpenCV (for line detection), JSON handling</li>
+      <li><strong>Platform:</strong> Desktop Python program</li>
+      <li><strong>File Input:</strong> User uploaded image (PNG/JPG)</li>
     </ul>
   </section>
 
   <section>
     <h2>Proposal Last Updated</h2>
-    <p class="date">November 19, 2025</p>
+    <p class="date">November 2025</p>
   </section>
 
   <section>
     <h2>Feature List (Prioritized)</h2>
     <ol>
-      <li>Upload an image of the user</li>
-      <li>Convert the image into contour/outline data</li>
-      <li>Generate a turtle drawing based on the outlines</li>
+      <li>Upload an image and convert it into cartoon outlines</li>
+      <li>Generate turtle paths from image contours</li>
+      <li>Python Turtle draws the cartoon version of the user</li>
     </ol>
   </section>
 
   <section>
     <h2>Future Feature List</h2>
     <ul>
-      <li>Colorized turtle drawing version</li>
-      <li>Option to simplify the drawing (cartoon mode)</li>
-      <li>Save drawing as PNG automatically</li>
+      <li>Add color-filling to cartoon shapes</li>
+      <li>Allow different cartoon styles (simple, detailed, anime)</li>
+      <li>Export turtle drawing as an image file</li>
     </ul>
   </section>
 
   <section>
     <h2>Basic Technical Features</h2>
     <ul>
-      <li>Reading and validating uploaded images</li>
-      <li>Responsive layout (HTML/CSS)</li>
-      <li>Displaying project information in a clean UI</li>
+      <li>Loading and processing user images</li>
+      <li>Edge detection using OpenCV</li>
+      <li>JSON file storing simplified drawing paths</li>
     </ul>
   </section>
 
   <section>
     <h2>Advanced Technical Features</h2>
     <ul>
-      <li>Using OpenCV to detect edges and contours</li>
-      <li>Generating dynamic Python turtle code from JSON paths</li>
-      <li>Automatic outline processing using image algorithms</li>
+      <li>Algorithmic contour simplification for cartoon effect</li>
+      <li>Automatic path smoothing and coordinate scaling</li>
+      <li>Real-time turtle rendering of complex image outlines</li>
     </ul>
   </section>
-  
+
 </body>
 </html>
 
